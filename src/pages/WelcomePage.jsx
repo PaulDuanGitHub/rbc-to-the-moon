@@ -4,7 +4,8 @@ class WelcomePage extends Component {
     render(){
         return(<div>
             Hello, this the homepage.
-        </div>);
+            <div></div>
+            </div>);
     }
 }
 

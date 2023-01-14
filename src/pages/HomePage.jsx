@@ -3,6 +3,7 @@ import { Component } from "react";
 import {Row, Col, Container} from "react-bootstrap"
 import BubbleComponent from "./BubbleComponent";
 import QRComponment from "./QRComponenet";
+import { NavLink } from "react-router-dom";
 class HomePage extends Component{
     test = () =>{
         axios.get().then((res) => {
@@ -11,7 +12,7 @@ class HomePage extends Component{
     }
     render(){
         return(<div>
-            <BubbleComponent></BubbleComponent>
+            <NavLink to="/lang"><BubbleComponent></BubbleComponent></NavLink>
             <QRComponment/>
         </div>);
     }
