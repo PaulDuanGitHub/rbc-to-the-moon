@@ -1,0 +1,8 @@
+.bubble-text {
+
+}
+
+.bubble-text:hover {
+    color: blue;
+    font-weight: bold;
+}
