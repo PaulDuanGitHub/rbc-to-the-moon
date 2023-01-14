@@ -6,6 +6,8 @@
       max-height: 100% !important;
       height: 200px !important;
       font-size: 24px;
+      padding: 25px;
+      margin: 25px;
     }
   }
   
@@ -17,6 +19,8 @@
       max-height: 100% !important;
       height: 150px !important;
       font-size: 18px;
+      padding: 25px;
+      margin: 25px;
     }
   }
   
@@ -28,6 +32,8 @@
       max-height: 100% !important;
       height: 100px !important; /* whatever height you want for medium screen */
       font-size: 12px;
+      padding: 25px;
+      margin: 25px;
     }
   }
   
@@ -39,7 +45,8 @@
       max-height: 100% !important;
       height: 50px !important; /* whatever height you want for mobile screen */
       font-size: 5px;
-      padding: 0px;
+      padding: 25px;
+      margin: 25px;
       font-size: 7px;
     }
   }
