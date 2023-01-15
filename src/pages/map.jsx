@@ -5,6 +5,7 @@ import "./Map.css"
 import SearchIcon from "../img/search.png"
 import { Button, ListGroup} from "react-bootstrap";
 import { DistanceMatrixService } from "@react-google-maps/api";
+import QRComponment from "./QRComponenet";
 
 let markerArray = [];
 class Map extends React.Component {
@@ -17,7 +18,7 @@ class Map extends React.Component {
         markers: [],
         bounds: null,
         map: null,
-        listSource: [{branchName:"ASDFE",branchDis:"8km", branchAdr: "1988E AWroad"},{branchName:"",branchDis:"", branchAdr: ""},{branchName:"",branchDis:"", branchAdr: ""}]
+        listSource: [{branchName:"",branchDis:"", branchAdr: ""},{branchName:"",branchDis:"", branchAdr: ""},{branchName:"",branchDis:"", branchAdr: ""}]
     };
 
     search = (event) => {
@@ -132,7 +133,7 @@ class Map extends React.Component {
                         center={this.state.currentLocation}
                         zoom={12}
                         onLoad={map => this.onMapLoad(map)}
-                        mapContainerStyle={{ height: "468px", width: "744px" }}
+                        mapContainerStyle={{ height: "468px", width: "500px" }}
                     >
                         {this.state.markers.map((mark, index) => (
                             <Marker key={index} position={mark} />
@@ -173,6 +174,7 @@ class Map extends React.Component {
                     </ListGroup.Item>
                 </ListGroup>
                 </div>
+                <QRComponment></QRComponment>
             </div>
         );
     }

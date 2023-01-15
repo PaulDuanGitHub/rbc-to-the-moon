@@ -11,10 +11,9 @@
 
     position: absolute;
     width: 744px;
-    height: 80px;
+    height: 45px;
     left: 164px;
-    top: 335px;
-    
+    top: 325px;
     mix-blend-mode: normal;
     border: 2px solid #C5C8CC;
 }
@@ -23,15 +22,16 @@
     position: absolute;
     width: 77px;
     height: 76px;
-    left: 829px;
-    top: 337px;
+    scale: 0.6;
+    left: 846px;
+    top: 310px;
 }
 
 .map-page-list {
     position: absolute;
     width: 481px;
     height: 81px;
-    left: 950px;
+    left: 700px;
     top: 450px;
 }
 

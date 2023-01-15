@@ -7,7 +7,7 @@
     font-family: 'Noto Sans';
     font-style: 'normal';
     font-weight: 400;
-    font-size: 48px;
+    font-size: 25px;
     line-height: 65px;
     color: #266BBD;
 }
@@ -16,17 +16,18 @@
     width: 744px;
     height: 66px;
     left: 164px;
-    top: 237px;
+    top: 200px;
     
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
+    text-align: left;
     line-height: 33px;
     
     color: #002750;
     
-}
+} 
 
 .map-page-map {
     position: absolute;

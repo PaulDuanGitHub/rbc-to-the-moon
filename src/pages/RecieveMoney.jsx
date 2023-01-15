@@ -2,6 +2,7 @@ import { Component } from "react";
 import { NavLink } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import "./RecieveMoney.css"
+import QRComponment from "./QRComponenet";
 class RecieveMoney extends Component {
     test = () => {
         return ;
@@ -32,14 +33,8 @@ class RecieveMoney extends Component {
 
             <div class="outline2recieve"></div>
             <div class="outline2textrecieve">Tell us a little about yourself and start sending and receiving money internationally today!</div>
-            { <h1 class="buttonbook"><NavLink to="/su"><Button size='lg' variant="Book Appointment" onClick={this.test}>Book Appointment</Button></NavLink></h1> } <br />
-
-            { <h1 class="backpage"><NavLink to = "/en"><Button size='lg' variant="Back to Home Page" onClick={this.test}>Back to Home Page</Button></NavLink></h1> }
-            
-            
-
-            
-
+            { <h1 class="buttonbook"><NavLink to="/su"><Button size='lg' variant="Book Appointment" onClick={this.test}>Book Appointment</Button></NavLink></h1> }
+            <QRComponment></QRComponment>
         </div>);
         }
     }

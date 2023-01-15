@@ -12,7 +12,7 @@ class LanguagePage extends Component {
     }
     render(){
         return(<div>
-            <Row style={{justifyContent:"center",width:"1080px"}}>
+            <Row style={{justifyContent:"center",width:"1080px", position:"absolute",left:"80px",top:"50px"}}>
                 <Col>
                     <Row><div className="lang-page-greeting">Welcome to Canada</div></Row>
                     <Row><NavLink to="/en"><Button size='lg' variant="English" className="lang-page-item">English</Button></NavLink></Row>
