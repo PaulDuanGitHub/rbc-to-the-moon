@@ -1,0 +1,28 @@
+.map-page-map {
+    position: absolute;
+    width: 744px;
+    height: 468px;
+    left: 164px;
+    top: 455px;
+}
+
+.map-page-sb {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 744px;
+    height: 80px;
+    left: 164px;
+    top: 335px;
+    
+    mix-blend-mode: normal;
+    border: 2px solid #C5C8CC;
+}
+
+.map-page-search-icon {
+    position: absolute;
+    width: 77px;
+    height: 76px;
+    left: 829px;
+    top: 337px;
+}

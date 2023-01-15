@@ -2,6 +2,7 @@ import { Component } from "react";
 import Button from 'react-bootstrap/Button';
 import Badge from 'react-bootstrap/Badge';
 import { NavLink } from "react-router-dom";
+import QRComponment from "./QRComponenet";
 
 class LanguagePage extends Component {
     test = () => {
@@ -23,6 +24,7 @@ class LanguagePage extends Component {
             <h2>
                 Bienvenue en Canada.
             </h2>
+            <QRComponment></QRComponment>
         </div>);
         }
     }

@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import { NavLink } from "react-router-dom";
 import { MDBBtn } from "mdb-react-ui-kit";
 import "./EnglishPage.css"
+import QRComponment from "./QRComponenet";
 
 
 class EnglishPage extends Component {
@@ -41,7 +42,7 @@ class EnglishPage extends Component {
             </div>
 
     
-
+            <QRComponment></QRComponment>
             </div>);
     }
 }
