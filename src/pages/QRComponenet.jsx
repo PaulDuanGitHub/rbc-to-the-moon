@@ -2,12 +2,14 @@ import { Component } from "react";
 import "./QRComponent.css";
 import QR from "../img/qr.png"
 import RBCLogo from "../img/rbc-logo.png"
+import { NavLink } from "react-router-dom";
 class QRComponment extends Component {
     render() {
         return(
             <div className="qr-side">
                 <div className="qr-backgroud">
                 </div>
+                <NavLink to="/lang">Back to Home Page</NavLink>
                 <img src={QR} className="qr-code"></img>
                 <img src={RBCLogo} className="qr-rbc-logo"></img>
                 <div className="qr-text">

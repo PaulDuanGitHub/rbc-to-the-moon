@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { NavLink } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
-
+import "./RecieveMoney.css"
 class RecieveMoney extends Component {
     test = () => {
         return ;
@@ -14,7 +14,7 @@ class RecieveMoney extends Component {
             <div class="box"></div>
             <h2 className="subtitleba">International Money Transfers</h2>
 
-            <h3 className="heading">Settle in faster with the RBC Newcomer Advantage</h3>
+            <h3 className="money-heading">2 Free International Money Transfers per Month for a Year</h3>
 
             <h7 className="sentence" >
                 • Send money any time, day or night<br />

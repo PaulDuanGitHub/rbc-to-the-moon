@@ -80,3 +80,39 @@ line-height: 33px;
 
 color: #002750;
 }
+
+.learn-collapses {
+    position: absolute;
+    text-align: left;
+    width: 954px;
+    height: 66px;
+    left: 164px;
+    top: 350px;
+
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+
+    color: #002750;
+}
+
+.collapse-btn {
+    text-align: left !important;
+    padding: 15px !important;
+    width: 500px;
+    font-family: 'Noto Sans';
+    margin-bottom: 15px !important;
+    border-radius: 0px !important;
+    background-color: #EEEEEE !important;
+    color: black !important;
+    border: none !important;
+    font-size: large !important;
+}
+
+.collapse-text {
+    font-family: Noto Sans;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
