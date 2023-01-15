@@ -45,7 +45,6 @@
     }
 
 /*SubSUBtitle - nEWCOMER ADVANTAGE*/
-@media (max-width:3920px){
     .subba {
         position: absolute !important;
       text-align: left;
@@ -55,7 +54,6 @@
       color: #002750;
       font-family: "Noto Sans";
     }
-  } 
 
 /* Rectangle - Covers text
 @media (max-width:3920px){
