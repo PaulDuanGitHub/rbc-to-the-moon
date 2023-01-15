@@ -1,9 +1,10 @@
 /*global google*/
 import React from "react";
-import { GoogleMap, Marker } from "@react-google-maps/api";
+import { GoogleMap, Marker, GoogleApiWrapper } from "@react-google-maps/api";
 import "./Map.css"
 import SearchIcon from "../img/search.png"
-import { Button } from "react-bootstrap";
+import { Button, ListGroup} from "react-bootstrap";
+import { DistanceMatrixService } from "@react-google-maps/api";
 
 let markerArray = [];
 class Map extends React.Component {
@@ -15,7 +16,8 @@ class Map extends React.Component {
         currentLocation: { lat: 0, lng: 0 },
         markers: [],
         bounds: null,
-        map: null
+        map: null,
+        listSource: [{branchName:"ASDFE",branchDis:"8km", branchAdr: "1988E AWroad"},{branchName:"",branchDis:"", branchAdr: ""},{branchName:"",branchDis:"", branchAdr: ""}]
     };
 
     search = (event) => {
@@ -47,7 +49,8 @@ class Map extends React.Component {
         console.log(this.state.currentLocation);
         let request2 = {
             location: this.state.currentLocation,
-            radius: 8000,
+            rankBy: google.maps.places.RankBy.DISTANCE,
+            // radius: 8000,
             keyword: "RBC Royal Bank Branch"
         };
         let service = new google.maps.places.PlacesService(map);
@@ -55,12 +58,36 @@ class Map extends React.Component {
         service.nearbySearch(request2, (results, status) => {
             console.log("nearby" + status);
             if (status === google.maps.places.PlacesServiceStatus.OK) {
+                var ii = 0;
                 for (var i = 0; i < results.length; i++) {
                     let place = results[i].geometry.location;
-                    console.log("nearby");
+                    console.log("nearby") ;
                     service.getDetails({ placeId: results[i].place_id }, (result, status) => {
                         if (status === google.maps.places.PlacesServiceStatus.OK) {
-                            console.log(result.formatted_address);
+                            let branchName = result.name;
+                            let branchAdr = result.formatted_address;
+                            let branchDis = "";
+                            var origin = this.state.currentLocation;
+                            var destination = result.geometry.location;
+
+                            var service = new google.maps.DistanceMatrixService();
+                            service.getDistanceMatrix({
+                                origins: [origin],
+                                destinations: [destination],
+                                travelMode: google.maps.TravelMode.DRIVING,
+                                unitSystem: google.maps.UnitSystem.METRIC
+                            }, (res) => {
+                                console.log(ii);
+                                if (ii <= 2) {
+                                    console.log(res);
+                                    branchDis = res.rows[0].elements[0].distance.text;
+                                    let branchDur = res.rows[0].elements[0].duration.text;
+                                    var newList = this.state.listSource;
+                                    newList[ii] = {branchName:branchName, branchDis: branchDis, branchAdr: branchAdr}
+                                    ii++;
+                                    this.setState({listSource: newList})
+                                }
+                                });
                         }
                     })
                     markerArray.push(place);
@@ -112,7 +139,40 @@ class Map extends React.Component {
                         ))}
                     </GoogleMap>
                 </div>
-                
+                <div>
+                <ListGroup className="map-page-list">
+                    <ListGroup.Item>
+                    <div>
+                        <div style={{display:"flex",justifyContent:"space-between"}}>1. <div style={{color: "#266BBD", display:"contents"}}>{this.state.listSource[0].branchName}</div>
+                        <div>
+                            {this.state.listSource[0].branchDis}
+                        </div>
+                        </div>
+                        <div style={{textAlign:"left"}}>{this.state.listSource[0].branchAdr}</div>
+                    </div>
+                    </ListGroup.Item>
+                    <ListGroup.Item>
+                    <div>
+                        <div style={{display:"flex",justifyContent:"space-between"}}>2. <div style={{color: "#266BBD", display:"contents"}}>{this.state.listSource[1].branchName}</div>
+                        <div>
+                            {this.state.listSource[1].branchDis}
+                        </div>
+                        </div>
+                        <div style={{textAlign:"left"}}>{this.state.listSource[1].branchAdr}</div>
+                    </div>
+                    </ListGroup.Item>                    
+                    <ListGroup.Item>
+                    <div>
+                        <div style={{display:"flex",justifyContent:"space-between"}}>3. <div style={{color: "#266BBD", display:"contents"}}>{this.state.listSource[2].branchName}</div>
+                        <div>
+                            {this.state.listSource[2].branchDis}
+                        </div>
+                        </div>
+                        <div style={{textAlign:"left"}}>{this.state.listSource[2].branchAdr}</div>
+                    </div>
+                    </ListGroup.Item>
+                </ListGroup>
+                </div>
             </div>
         );
     }

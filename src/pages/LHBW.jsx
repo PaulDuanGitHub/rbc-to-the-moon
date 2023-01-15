@@ -2,19 +2,27 @@ import { Component } from "react";
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
+import { NavLink } from "react-router-dom";
+import QRComponment from "./QRComponenet";
+import "./LHBW.css"
 
 class LHBW extends Component {
     state = {open1:false,open2:false,open3:false,open4:false}
     render(){
         return(<div>
-            <h4>
+            <h4 className = "title1">
             Learn how banking works <br />
             </h4>
+
+            <h9 className = "blurb">
+            Since banking in Canada may be quite different from banking back home, we’ve put together some information to help you get familiar with how it works here:
+            </h9>
     <div>
     <Button
         onClick={() => this.setState({open1:!this.state.open1})}
         aria-controls="example-collapse-text"
         aria-expanded={this.state.open1}
+        className="bankacctypes"
       >
         Bank account types
       </Button>
@@ -35,6 +43,7 @@ class LHBW extends Component {
         onClick={() => this.setState({open2:!this.state.open2})}
         aria-controls="example-collapse-text"
         aria-expanded={this.state.open2}
+        className="cheques"
       >
         How cheques work in Canada
       </Button>
@@ -50,6 +59,7 @@ class LHBW extends Component {
         onClick={() => this.setState({open3:!this.state.open3})}
         aria-controls="example-collapse-text"
         aria-expanded={this.state.open3}
+        className="debit"
       >
         Using a debit card (or client card)
       </Button>
@@ -65,6 +75,7 @@ class LHBW extends Component {
         onClick={() => this.setState({open4:!this.state.open4})}
         aria-controls="example-collapse-text"
         aria-expanded={this.state.open4}
+        className="account"
       >
         Accessing your accounts
       </Button>
@@ -124,7 +135,8 @@ class LHBW extends Component {
                 </Dropdown.Menu>
             </Dropdown>
       */}
-            
+        { <h1><NavLink to = "/lang"><Button size='lg' className= "backtohome" variant="Back to Home Page" onClick={this.test}>Back to Home Page</Button></NavLink></h1> }    
+        <QRComponment></QRComponment>
         </div>);
     }
 }

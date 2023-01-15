@@ -6,11 +6,13 @@ class QRComponment extends Component {
     render() {
         return(
             <div className="qr-side">
+                <div className="qr-backgroud">
+                </div>
+                <img src={QR} className="qr-code"></img>
                 <img src={RBCLogo} className="qr-rbc-logo"></img>
                 <div className="qr-text">
                     Want to save this information for later?
                 </div>
-                <img src={QR} className="qr-code"></img>
             </div>
         )
     }
