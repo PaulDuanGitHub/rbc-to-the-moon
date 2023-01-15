@@ -10,7 +10,7 @@
         font-family: 'Noto Sans';
         font-style: normal;
         font-weight: 400;
-        font-size: 48px;
+        font-size: 44px;
         line-height: 65px;
 
         color: #266BBD;
@@ -20,9 +20,9 @@
 
 /*Subtitle - What we can offer*/
 @media (max-width: 3920px) {
-    .subtitlere{
+    .subtitlerecieve{
         position: absolute;
-        width: 500px;
+        width: 436px;
         height: 44px;
         left: 164px;
         top: 237px;
@@ -30,22 +30,24 @@
         font-family: 'Noto Sans';
         font-style: normal;
         font-weight: 300;
-        font-size: 32px;
+        font-size: 30px;
         line-height: 44px;
         /* identical to box height */
 
 
         color: #002750;
+
     }
 }
 
     /*box*/
 @media (max-width: 3920px) {
-    .box{
+    .boxrecieve{
         box-sizing: border-box;
+
         position: absolute;
-        width: 912px;
-        height: 226px;
+        width: 935px;
+        height: 250px;
         left: 164px;
         top: 321px;
 
@@ -57,9 +59,9 @@
 
 /* Heading 3*/
 @media (max-width: 3920px){
-    .heading{
+    .headingrecieve{
         position: absolute;
-        width: 640px;
+        width: 697px;
         height: 37px;
         left: 209px;
         top: 342px;
@@ -67,7 +69,7 @@
         font-family: 'Noto Sans';
         font-style: normal;
         font-weight: 400;
-        font-size: 27px;
+        font-size: 25px;
         line-height: 37px;
         /* identical to box height */
 
@@ -78,17 +80,44 @@
 
 /*dotjots*/
 @media (max-width: 3920px){
-    .sentence{
+    .sentencerecieve{
         position: absolute;
-    width: 882px;
-    height: 115px;
-    left: 194px;
-    top: 395px;
+        width: 882px;
+        height: 115px;
+        left: 194px;
+        top: 425px;
 
+        align-items: left !important;
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 30px;
+        /* identical to box height */
 
 
         color: #002750;
 
+    }
+}
+/*offer*/
+@media (max-width: 3902px){
+    .offer{
+        position: absolute;
+        width: 251px;
+        height: 26px;
+        left: 209px;
+        top: 526px;
+
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 19px;
+        line-height: 26px;
+        /* identical to box height */
+
+
+        color: #002750;
     }
 }
 #name-input, #email-input, #phone-input{
@@ -97,15 +126,16 @@
     left: 50px;
     width: 200px; 
 }
-/*outlineI*/
+/*outlineIrecieve*/
 @media (max-width: 3902px){
-    .outline{
+    .outlinerecieve{
         box-sizing: border-box;
+
         position: absolute;
-        width: 610px;
-        height: 320px;
+        width: 622px;
+        height: 307px;
         left: 164px;
-        top: 587px;
+        top: 600px;
 
         mix-blend-mode: normal;
         border: 2px solid #C5C8CC;
@@ -193,14 +223,14 @@
 
 /*outline2*/
 @media (max-width: 3902px){
-    .outline2{
+    .outline2recieve{
         box-sizing: border-box;
 
         position: absolute;
         width: 252px;
-        height: 237px;
-        left: 824px;
-        top: 587px;
+        height: 224px;
+        left: 847px;
+        top: 600px;
 
         mix-blend-mode: normal;
         border: 2px solid #C5C8CC;
@@ -209,12 +239,12 @@
 
 /*outline2 info*/
 @media (max-width: 3902px){
-    .outline2text{
+    .outline2textrecieve{
         position: absolute;
         width: 208px;
-        height: 174px;
-        left: 848px;
-        top: 619px;
+        height: 145px;
+        left: 871px;
+        top: 629px;
 
         font-family: 'Noto Sans';
         font-style: normal;
@@ -233,18 +263,19 @@
         position: absolute;
         width: 252px;
         height: 54px;
-        left: 824px;
+        left: 847px;
         top: 853px;
+
 
     }
 }
 /*blue button*/
 @media (max-width: 3902px){
-    .bluebutton{
+    .bluebuttonrecieve{
         position: absolute;
         width: 252px;
         height: 54px;
-        left: 824px;
+        left: 847px;
         top: 853px;
         
         background: #266BBD;
@@ -252,11 +283,11 @@
 }
 /*button*/
 @media (max-width: 3902px){
-    .buttontext{
+    .buttontextrecieve{
         position: absolute;
         width: 204.22px;
         height: 32.12px;
-        left: 848px;
+        left: 871px;
         top: 864px;
 
         font-family: 'Roboto';
@@ -266,7 +297,7 @@
         line-height: 28px;
         text-align: center;
 
-        color: #ffffff;
+        color: #FFFFFF;
 
     }
 }
