@@ -30,7 +30,7 @@ class RecieveMoney extends Component {
             <div class="nameword" margin="left">{this.props.t("Name")}*</div>
             <div class="email"><input type="text" name="" id="email-input" /></div>
             <div class="emailword">{this.props.t("Email")}*</div>
-            <div class="phone"><input type="text" name="" id="phone-input" font-size="12px "/></div>
+            <div class="phone"><input type="text" name="" id="phone-input" fontSize="12px "/></div>
             <div class="phoneword">{this.props.t("Phone Number")}</div>
 
             <div class="outline2recieve"></div>

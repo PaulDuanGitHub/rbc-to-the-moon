@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { LoadScript } from "@react-google-maps/api";
+import { LoadScript, GoogleMap } from "@react-google-maps/api";
 import Map from "./Map";
 import "./MapPage.css"
 import { withTranslation } from "react-i18next";
@@ -18,9 +18,10 @@ class MapPage extends React.Component {
                     {/* Make an appointment at your nearest RBC branch to learn more about banking, investing, borrowing, credit card services and more. */}
                     {this.props.t("Make an appointment at your nearest RBC branch to learn more about banking, investing, borrowing, credit card services and more.")}
                 </div>
-                <LoadScript googleMapsApiKey={key} libraries={lib}>
+                {window.google === undefined ?  <LoadScript googleMapsApiKey={key} libraries={lib}><Map /></LoadScript> : <Map />}
+                {/* <LoadScript googleMapsApiKey={key} libraries={lib}>
                     <Map />
-                </LoadScript>
+                </LoadScript> */}
                 {/* <QRComponment></QRComponment> */}
             </div>
         );
