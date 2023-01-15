@@ -1,6 +1,9 @@
 /*global google*/
 import React from "react";
 import { GoogleMap, Marker } from "@react-google-maps/api";
+import "./Map.css"
+import SearchIcon from "../img/search.png"
+import { Button } from "react-bootstrap";
 
 let markerArray = [];
 class Map extends React.Component {
@@ -18,7 +21,7 @@ class Map extends React.Component {
     search = (event) => {
         let map = this.state.map;
 
-        if (event.key == "Enter" && this.myRef.current.value != "") {
+        if (this.myRef.current.value != "" && (event.key == "Enter" || event.type == "click")) {
             console.log(this.myRef.current.value);
             let request = {
                 query: this.myRef.current.value,
@@ -35,8 +38,6 @@ class Map extends React.Component {
                 })
             }
             });
-        } else if (event.type == "click" && this.myRef.current.value != "") {
-            console.log(this.myRef.current.value);
         }
     };
     search2= () => {
@@ -87,38 +88,24 @@ class Map extends React.Component {
     render() {
         return (
             <div>
-                <div id="">
+                <div>
                     <input
+                        className="map-page-sb"
                         id="searchbox"
                         type="text"
                         ref={this.myRef}
                         placeholder="Customized your placeholder"
-                        onClick={this.search}
+                        // onClick={this.search}
                         onKeyDown={this.search}
-                        style={{
-                            boxSizing: `border-box`,
-                            border: `1px solid transparent`,
-                            width: `240px`,
-                            height: `32px`,
-                            padding: `0 12px`,
-                            borderRadius: `3px`,
-                            boxShadow: `0 2px 6px rgba(0, 0, 0, 0.3)`,
-                            fontSize: `14px`,
-                            outline: `none`,
-                            textOverflow: `ellipses`,
-                            position: "absolute",
-                            left: "50%",
-                            marginLeft: "-120px"
-                        }}
                     />
+                    <Button style={{backgroundImage: `url(${SearchIcon})`}} className="map-page-search-icon" onClick={this.search}></Button>
                 </div>
-                <br />
-                <div>
+                <div className="map-page-map">
                     <GoogleMap
                         center={this.state.currentLocation}
                         zoom={12}
                         onLoad={map => this.onMapLoad(map)}
-                        mapContainerStyle={{ height: "400px", width: "800px" }}
+                        mapContainerStyle={{ height: "468px", width: "744px" }}
                     >
                         {this.state.markers.map((mark, index) => (
                             <Marker key={index} position={mark} />

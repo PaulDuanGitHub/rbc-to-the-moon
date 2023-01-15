@@ -23,8 +23,10 @@ function App() {
           <Route path="/ba" element={<OpenAccount/>}/>
           <Route path="/fo" element={<AppointmentForm/>}/>
           <Route path="/su" element={<Submit/>}/>
+          <Route path="/fi" element={<MapPage/>}/>
           <Route path="/lang" element={<LanguagePage/>}/>
           <Route path="/re" element={<RecieveMoney/>}/>
+          <Route path="/ho" element={<LHBW/>}/>
           <Route path="*" element={<LanguagePage/>}/>
           <Route/>
         </Routes>

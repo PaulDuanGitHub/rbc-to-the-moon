@@ -1,12 +1,14 @@
 import { Component } from "react";
 import "./QRComponent.css";
 import QR from "../img/qr.png"
+import RBCLogo from "../img/rbc-logo.png"
 class QRComponment extends Component {
     render() {
         return(
-            <div style={{position:"fixed",bottom: 15,right: 15}}>
+            <div className="qr-side">
+                <img src={RBCLogo} className="qr-rbc-logo"></img>
                 <div className="qr-text">
-                    For more information on banking with RBC, scan this QR code or press the QR code to print a copy.
+                    Want to save this information for later?
                 </div>
                 <img src={QR} className="qr-code"></img>
             </div>
