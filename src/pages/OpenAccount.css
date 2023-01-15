@@ -2,10 +2,11 @@
 @media (max-width: 3920px) {
     .titleba {
         position: absolute;
-        width: 500px;
+        width: 1080px;
         height: 65px;
         left: 164px;
         top: 136px;
+        text-align: left;
 
         font-family: 'Noto Sans';
         font-style: normal;
@@ -21,9 +22,10 @@
 @media (max-width: 3920px) {
     .subtitleba {
         position: absolute;
-        width: 500px;
+        width: 1080px;
         height: 44px;
         left: 164px;
+        text-align: left;
         top: 237px;
 
         font-family: 'Noto Sans';
@@ -58,9 +60,10 @@
 @media (max-width: 3920px){
     .heading{
         position: absolute;
-        width: 640px;
+        width: 1080px;
         height: 37px;
         left: 209px;
+        text-align: left !important;
         top: 342px;
 
         font-family: 'Noto Sans';
@@ -79,11 +82,12 @@
 @media (max-width: 3920px){
     .sentence{
         position: absolute;
-        width: 391px;
+        width: 1080px;
         height: 112px;
         left: 209px !important;
         top: 400px !important;
         align-items: left !important;
+        text-align: left !important;
         font-family: 'Noto Sans';
         font-style: normal;
         font-weight: 300;
@@ -225,7 +229,7 @@
         font-family: 'Noto Sans';
         font-style: normal;
         font-weight: 300;
-        font-size: 21px;
+        font-size: 18px;
         line-height: 29px;
 
         color: #002750;
@@ -262,7 +266,7 @@
         position: absolute;
         width: 204.22px;
         height: 32.12px;
-        left: 848px;
+        left: 824px;
         top: 864px;
 
         font-family: 'Roboto';

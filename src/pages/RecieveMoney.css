@@ -2,6 +2,7 @@
 @media (max-width: 3920px) {
     .titlerecieve{
         position: absolute;
+        text-align: left;
         width: 807px;
         height: 65px;
         left: 164px;
@@ -10,7 +11,7 @@
         font-family: 'Noto Sans';
         font-style: normal;
         font-weight: 400;
-        font-size: 44px;
+        font-size: 40px;
         line-height: 65px;
 
         color: #266BBD;
@@ -22,10 +23,11 @@
 @media (max-width: 3920px) {
     .subtitlerecieve{
         position: absolute;
-        width: 436px;
+        text-align: left;
+        width: 1080px;
         height: 44px;
         left: 164px;
-        top: 237px;
+        top: 200px;
 
         font-family: 'Noto Sans';
         font-style: normal;
@@ -49,7 +51,7 @@
         width: 935px;
         height: 250px;
         left: 164px;
-        top: 321px;
+        top: 250px;
 
         background: #EEEEEE;
         opacity: 0.4;
@@ -61,15 +63,16 @@
 @media (max-width: 3920px){
     .headingrecieve{
         position: absolute;
-        width: 697px;
+        width: 1080px;
+        text-align: left;
         height: 37px;
-        left: 209px;
-        top: 342px;
+        left: 175px;
+        top: 250px;
 
         font-family: 'Noto Sans';
         font-style: normal;
         font-weight: 400;
-        font-size: 25px;
+        font-size: 24px;
         line-height: 37px;
         /* identical to box height */
 
@@ -86,6 +89,7 @@
         height: 115px;
         left: 194px;
         top: 425px;
+        text-align: left;
 
         align-items: left !important;
         font-family: 'Noto Sans';
@@ -105,9 +109,10 @@
     .offer{
         position: absolute;
         width: 251px;
+        text-align: left;
         height: 26px;
         left: 209px;
-        top: 526px;
+        top: 450px;
 
         font-family: 'Noto Sans';
         font-style: normal;
@@ -231,7 +236,6 @@
         height: 224px;
         left: 847px;
         top: 600px;
-
         mix-blend-mode: normal;
         border: 2px solid #C5C8CC;
     }
@@ -249,7 +253,7 @@
         font-family: 'Noto Sans';
         font-style: normal;
         font-weight: 300;
-        font-size: 21px;
+        font-size: 18px;
         line-height: 29px;
 
         color: #002750;

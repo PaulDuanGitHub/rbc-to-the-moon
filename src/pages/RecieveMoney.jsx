@@ -18,12 +18,9 @@ class RecieveMoney extends Component {
             <h2 className="subtitlerecieve">{this.props.t("International Money Transfers")}</h2>
 
             <h3 className="headingrecieve">{this.props.t("2 Free International Money Transfers per Month for a Year")}</h3>
-
-            <h7 className="sentencerecieve" >
-                • {this.props.t("Send money any time, day or night")}<br />
-                • {this.props.t("Send to over 120 countries")} <br/>
-                • {this.props.t("Easy and secure transfers through RBC Online Banking or the RBC Mobile app")}
-            </h7>
+            <div style={{top:"300px"}} className="sentencerecieve">• {this.props.t("Send money any time, day or night")}</div>
+            <div style={{top:"350px"}} className="sentencerecieve">• {this.props.t("Send to over 120 countries")}</div>
+            <div style={{top:"400px"}} className="sentencerecieve">• {this.props.t("Easy and secure transfers through RBC Online Banking or the RBC Mobile app")}</div>
             <div class="outlinerecieve"></div>
             <div class="bluebuttonrecieve"></div>
             <div class="name"><input type="text" name="" id="name-input" /></div>

@@ -18,11 +18,11 @@ class OpenAccount extends Component {
 
             <h3 className="heading">{this.props.t("Settle in faster with the RBC Newcomer Advantage")}</h3>
 
-            <h7 className="sentence" >
-                • {this.props.t("Start With a Canadian Bank Account")}
+            <div className="sentence" >
+                • {this.props.t("Start With a Canadian Bank Account")} <br/>
                 • {this.props.t("Add a Canadian Credit Card")} <br/>
                 • {this.props.t("Safe Deposit Box")}
-            </h7>
+            </div>
             <div class="outline"></div>
             <div class="bluebutton"></div>
             <div class="name"><input placeholder="Please enter your info" type="text" name="" id="name-input" /></div>
@@ -34,7 +34,7 @@ class OpenAccount extends Component {
 
             <div class="outline2"></div>
             <div class="outline2text">{this.props.t("Tell us a little about yourself and an RBC Business Banking Specialist will contact you within one business day.")}</div>
-            { <h1 class="buttonbook"><NavLink to="/su"><Button size='lg' variant="Book Appointment">{this.props.t("Book Appointment")}</Button></NavLink></h1> } <br />
+            { <h1 class="buttonbook"><NavLink to="/su"><Button style={{position:"absolute",right:"50px"}}size='lg' variant="Book Appointment">{this.props.t("Book Appointment")}</Button></NavLink></h1> } <br />
             <QRComponment></QRComponment>
         </div>);
         }

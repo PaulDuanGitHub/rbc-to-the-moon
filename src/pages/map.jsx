@@ -122,7 +122,7 @@ class Map extends React.Component {
                         id="searchbox"
                         type="text"
                         ref={this.myRef}
-                        placeholder="Customized your placeholder"
+                        placeholder=""
                         // onClick={this.search}
                         onKeyDown={this.search}
                     />
