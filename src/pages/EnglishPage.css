@@ -12,7 +12,7 @@
       margin-top: 126px !important;
       font-size: 50px;
       padding: 25px;
-      margin: 0 100px 25px 100px;
+      margin: 0 112px 25px 112px;
       border-radius: 0;
     }
   }
@@ -84,7 +84,7 @@
 @media (max-width: 3920px) {
   .square-responsive {
     text-align: left;
-      font-size: 48px;
+      font-size: 30px;
       margin-left: 164px;
       margin-top: 136px !important;
       color: #266BBD;

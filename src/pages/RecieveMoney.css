@@ -1,0 +1,293 @@
+/* Title - Open a Bank Account*/
+@media (max-width: 3920px) {
+    .titlerecieve{
+        position: absolute;
+        width: 807px;
+        height: 65px;
+        left: 164px;
+        top: 136px;
+
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 65px;
+
+        color: #266BBD;
+
+    }
+  }
+
+/*Subtitle - What we can offer*/
+@media (max-width: 3920px) {
+    .subtitlere{
+        position: absolute;
+        width: 500px;
+        height: 44px;
+        left: 164px;
+        top: 237px;
+
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 44px;
+        /* identical to box height */
+
+
+        color: #002750;
+    }
+}
+
+    /*box*/
+@media (max-width: 3920px) {
+    .box{
+        box-sizing: border-box;
+        position: absolute;
+        width: 912px;
+        height: 226px;
+        left: 164px;
+        top: 321px;
+
+        background: #EEEEEE;
+        opacity: 0.4;
+        border: 2px solid #EEEEEE;
+    }
+}
+
+/* Heading 3*/
+@media (max-width: 3920px){
+    .heading{
+        position: absolute;
+        width: 640px;
+        height: 37px;
+        left: 209px;
+        top: 342px;
+
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 27px;
+        line-height: 37px;
+        /* identical to box height */
+
+
+        color: #002750;
+    }
+}
+
+/*dotjots*/
+@media (max-width: 3920px){
+    .sentence{
+        position: absolute;
+    width: 882px;
+    height: 115px;
+    left: 194px;
+    top: 395px;
+
+
+
+        color: #002750;
+
+    }
+}
+#name-input, #email-input, #phone-input{
+    /* font-size: 40px; */
+    line-height: 42px;
+    left: 50px;
+    width: 200px; 
+}
+/*outlineI*/
+@media (max-width: 3902px){
+    .outline{
+        box-sizing: border-box;
+        position: absolute;
+        width: 610px;
+        height: 320px;
+        left: 164px;
+        top: 587px;
+
+        mix-blend-mode: normal;
+        border: 2px solid #C5C8CC;
+    }
+}
+
+/*Name*/
+@media (max-width: 3902px){
+    .name{
+        box-sizing: border-box;
+        position: absolute;
+        width: 546px;
+        height: 52px;
+        left: 187px;
+        top: 636px;
+
+        border: 2px solid #C5C8CC;
+    }
+}
+@media (max-width: 3902px){
+    .nameword{
+        position: absolute;
+        width: 150px;
+        height: 26px;
+        left: 180px;
+        top: 649px;
+        color: #002750;
+        border: none;
+    }
+}
+
+/*email*/
+@media (max-width: 3902px){
+    .email{
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 546px;
+        height: 52px;
+        left: 187px;
+        top: 709px;
+        border: none;
+        border: 2px solid #C5C8CC;
+    }
+}
+@media (max-width: 3902px){
+    .emailword{
+        position: absolute;
+        width: 150px;
+        height: 26px;
+        left: 180px;
+        top: 722px;
+        color: #002750;
+        border: none;
+    }
+}
+/*Phone Number*/
+@media (max-width: 3902px){
+    .phone{
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 546px;
+        height: 52px;
+        left: 187px;
+        top: 782px;
+
+        border: 2px solid #C5C8CC;
+    }
+}
+@media (max-width: 3902px){
+    .phoneword{
+        position: absolute;
+        width: 150px;
+        height: 26px;
+        left: 210px;
+        top: 795px;
+        border: none;
+
+        color: #002750;
+
+    }
+}
+
+
+/*outline2*/
+@media (max-width: 3902px){
+    .outline2{
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 252px;
+        height: 237px;
+        left: 824px;
+        top: 587px;
+
+        mix-blend-mode: normal;
+        border: 2px solid #C5C8CC;
+    }
+}
+
+/*outline2 info*/
+@media (max-width: 3902px){
+    .outline2text{
+        position: absolute;
+        width: 208px;
+        height: 174px;
+        left: 848px;
+        top: 619px;
+
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 21px;
+        line-height: 29px;
+
+        color: #002750;
+
+    }
+}
+
+/*button*/
+@media (max-width: 3902px){
+    .buttonbook{
+        position: absolute;
+        width: 252px;
+        height: 54px;
+        left: 824px;
+        top: 853px;
+
+    }
+}
+/*blue button*/
+@media (max-width: 3902px){
+    .bluebutton{
+        position: absolute;
+        width: 252px;
+        height: 54px;
+        left: 824px;
+        top: 853px;
+        
+        background: #266BBD;
+    }
+}
+/*button*/
+@media (max-width: 3902px){
+    .buttontext{
+        position: absolute;
+        width: 204.22px;
+        height: 32.12px;
+        left: 848px;
+        top: 864px;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+
+        color: #ffffff;
+
+    }
+}
+
+/*back button*/
+@media (max-width: 3902px){
+    .backpage{
+        
+        position: absolute;
+        width: 217px;
+        height: 29px;
+        left: 164px;
+        top: 963px;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 29px;
+
+        color: #266BBD;
+
+    }
+}
