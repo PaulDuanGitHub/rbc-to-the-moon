@@ -1,0 +1,92 @@
+/* Title - Open a Bank Account*/
+@media (max-width: 3920px) {
+    .titleba {
+        text-align: left !important;
+        position: absolute !important;
+        font-size: 48px !important;
+        margin-left: 164px !important;
+        margin-top: 136px !important;
+        color: #266BBD;
+        font-family: "Noto Sans" !important;
+    }
+  }
+
+/*Subtitle - What we can offer*/
+    .subtitlearea {
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 912px;
+        height: 226px;
+        left: 164px;
+        top: 321px;
+        
+        background: #EEEEEE;
+        opacity: 0.4;
+        border: 2px solid #EEEEEE;
+        
+    }
+    .subtitleba {
+        position: absolute;
+        width: 605px;
+        height: 37px;
+        left: 209px;
+        top: 342px;
+        
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 27px;
+        line-height: 37px;
+        /* identical to box height */
+        
+        
+        color: #002750;
+    }
+
+/*SubSUBtitle - nEWCOMER ADVANTAGE*/
+@media (max-width:3920px){
+    .subba {
+        position: absolute !important;
+      text-align: left;
+      font-size: 27px;
+      margin-left: 209px;
+      margin-top: 342px !important;
+      color: #002750;
+      font-family: "Noto Sans";
+    }
+  } 
+
+/* Rectangle - Covers text
+@media (max-width:3920px){
+    .rectangleba{
+      height: 226px;
+      width: 912px;
+      margin-left: 164px;
+      margin-top: 321px !important;
+      position: absolute;
+      background-color: #000000 !important;
+    }
+  } */
+
+/*dot jots*/
+@media (max-width:3920px){
+    .dotjot{
+      margin-left: 209px;
+      margin-top: 395px !important;
+      list-style-type: circle;
+      color: #EEEEEE;
+    }
+  }
+  
+/*Rectangle - Covers text*/
+@media (max-width:3920px){
+    .rectangleba{
+      height: 320px;
+      width: 610px;
+      margin-left: 164px;
+      margin-top: 587px !important;
+  
+      background-color: #EEEEEE !important;
+    }
+  }
