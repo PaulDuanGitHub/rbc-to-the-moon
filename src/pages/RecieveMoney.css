@@ -1,8 +1,8 @@
 /* Title - Open a Bank Account*/
 @media (max-width: 3920px) {
-    .titleba {
+    .titlerecieve{
         position: absolute;
-        width: 500px;
+        width: 807px;
         height: 65px;
         left: 164px;
         top: 136px;
@@ -14,12 +14,13 @@
         line-height: 65px;
 
         color: #266BBD;
+
     }
   }
 
 /*Subtitle - What we can offer*/
 @media (max-width: 3920px) {
-    .subtitleba {
+    .subtitlere{
         position: absolute;
         width: 500px;
         height: 44px;
@@ -79,17 +80,11 @@
 @media (max-width: 3920px){
     .sentence{
         position: absolute;
-        width: 391px;
-        height: 112px;
-        left: 209px !important;
-        top: 400px !important;
-        align-items: left !important;
-        font-family: 'Noto Sans';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 22px;
-        line-height: 30px;
-        /* identical to box height */
+    width: 882px;
+    height: 115px;
+    left: 194px;
+    top: 395px;
+
 
 
         color: #002750;
