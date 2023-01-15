@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/rbc-to-the-moon/static/css/main.c7617eae.css",
-    "main.js": "/rbc-to-the-moon/static/js/main.e43df783.js",
+    "main.css": "/rbc-to-the-moon/static/css/main.da0c6065.css",
+    "main.js": "/rbc-to-the-moon/static/js/main.68f15a0f.js",
     "static/js/787.1e3f2f67.chunk.js": "/rbc-to-the-moon/static/js/787.1e3f2f67.chunk.js",
     "static/media/rbc-logo.png": "/rbc-to-the-moon/static/media/rbc-logo.ee569a05ad98cf3ad10c.png",
     "static/media/logo.svg": "/rbc-to-the-moon/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/rbc-to-the-moon/index.html",
-    "main.c7617eae.css.map": "/rbc-to-the-moon/static/css/main.c7617eae.css.map",
-    "main.e43df783.js.map": "/rbc-to-the-moon/static/js/main.e43df783.js.map",
+    "main.da0c6065.css.map": "/rbc-to-the-moon/static/css/main.da0c6065.css.map",
+    "main.68f15a0f.js.map": "/rbc-to-the-moon/static/js/main.68f15a0f.js.map",
     "787.1e3f2f67.chunk.js.map": "/rbc-to-the-moon/static/js/787.1e3f2f67.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c7617eae.css",
-    "static/js/main.e43df783.js"
+    "static/css/main.da0c6065.css",
+    "static/js/main.68f15a0f.js"
   ]
 }
