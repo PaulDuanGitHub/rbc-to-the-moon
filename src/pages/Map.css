@@ -26,3 +26,15 @@
     left: 829px;
     top: 337px;
 }
+
+.map-page-list {
+    position: absolute;
+    width: 481px;
+    height: 81px;
+    left: 950px;
+    top: 450px;
+}
+
+.list-group {
+    --bs-list-group-border-color: none !important;
+}

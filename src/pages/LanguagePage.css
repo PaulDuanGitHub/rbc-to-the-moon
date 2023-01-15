@@ -1,0 +1,20 @@
+.lang-page-greeting {
+    font-size: 25px;
+    color: #266BBD;
+    margin-top: 150px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.lang-page-item {
+    width: 300px !important;
+    margin-bottom: 50px;
+    border-radius: 0px !important;
+}
+.lang-page-item:hover {
+    width: 300px !important;
+    margin-bottom: 50px;
+    border-radius: 0px !important;
+    background-color: #266BBD !important;
+    color: white !important;
+}

@@ -1,0 +1,82 @@
+.title1 {
+    /* Learn How Banking Works in Canada */
+    position: absolute;
+    width: 785px;
+    height: 65px;
+    left: 164px;
+    top: 136px;
+
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 65px;
+
+    color: #266BBD;
+}
+
+
+.bankacctypes {
+    position: absolute !important;
+    width: 954px !important;
+    height: 81px !important;
+    left: 164px !important;
+    top: 339px !important;
+}
+
+.cheques {
+    position: absolute !important;
+    width: 954px !important;
+    height: 81px !important;
+    left: 164px !important;
+    top: 444px !important;
+}
+
+.debit {
+    position: absolute !important;
+    width: 954px !important;
+    height: 81px !important;
+    left: 164px !important;
+    top: 549px !important;
+}
+
+.account {
+    position: absolute !important;
+    width: 954px !important;
+    height: 81px !important;
+    left: 164px !important;
+    top: 654px !important;
+}
+
+
+.backtohome {
+    position: absolute;
+    width: 217px;
+    height: 29px;
+    left: 164px;
+    top: 963px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 29px;
+
+    color: #266BBD;
+}
+
+.blurb {
+position: absolute;
+width: 954px;
+height: 66px;
+left: 164px;
+top: 241px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 33px;
+
+color: #002750;
+}

@@ -19,7 +19,7 @@ class MapPage extends React.Component {
                 <LoadScript googleMapsApiKey={key} libraries={lib}>
                     <Map />
                 </LoadScript>
-                <QRComponment></QRComponment>
+                {/* <QRComponment></QRComponment> */}
             </div>
         );
     }

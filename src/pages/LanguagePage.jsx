@@ -3,6 +3,8 @@ import Button from 'react-bootstrap/Button';
 import Badge from 'react-bootstrap/Badge';
 import { NavLink } from "react-router-dom";
 import QRComponment from "./QRComponenet";
+import { Col, Row } from "react-bootstrap";
+import "./LanguagePage.css"
 
 class LanguagePage extends Component {
     test = () => {
@@ -10,20 +12,22 @@ class LanguagePage extends Component {
     }
     render(){
         return(<div>
-            <h2>
-                Welcome to Canada.<br /> 
-            </h2>
-            <NavLink to="/en"><Button size='lg' variant="English" onClick={this.test}>English</Button></NavLink>{'l '}
-            <Button size='lg' variant="Français">Français</Button>{' '}
-            <Button size='lg' variant="中文">中文</Button>{' '}
-            <Button size='lg' variant="தமிழ்">தமிழ்</Button>{' '}<br />
-            <Button size='lg' variant="Türkçe">Türkçe</Button>{' '}
-            <Button size='lg' variant="Español">Español</Button>{' '}
-            <Button size='lg' variant="عربي">عربي</Button>{' '}
-            <Button size='lg' variant="한국어">한국어</Button>{' '}<br />
-            <h2>
-                Bienvenue en Canada.
-            </h2>
+            <Row style={{justifyContent:"center",width:"1080px"}}>
+                <Col>
+                    <Row><div className="lang-page-greeting">Welcome to Canada</div></Row>
+                    <Row><NavLink to="/en"><Button size='lg' variant="English" className="lang-page-item">English</Button></NavLink></Row>
+                    <Row><NavLink to="/zh"><Button size='lg' variant="中文" className="lang-page-item">中文</Button></NavLink></Row>
+                    <Row><NavLink to="/ta"><Button size='lg' variant="தமிழ்" className="lang-page-item">தமிழ்</Button></NavLink></Row>
+                    <Row><NavLink to="/ar"><Button size='lg' variant="عربي" className="lang-page-item">عربي</Button></NavLink></Row>
+                </Col>
+                <Col>
+                    <Row><div className="lang-page-greeting">Bienvenue au Canada</div></Row>
+                    <Row><NavLink to="/fr"><Button size='lg' variant="Français" className="lang-page-item">Français</Button></NavLink></Row>
+                    <Row><NavLink to="/tr"><Button size='lg' variant="Türkçe" className="lang-page-item">Türkçe</Button></NavLink></Row>
+                    <Row><NavLink to="/es"><Button size='lg' variant="Español" className="lang-page-item">Español</Button></NavLink></Row>
+                    <Row><NavLink to="/ko"><Button size='lg' variant="한국어" className="lang-page-item">한국어</Button></NavLink></Row>
+                </Col>            
+            </Row>
             <QRComponment></QRComponment>
         </div>);
         }
