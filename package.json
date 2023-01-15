@@ -12,10 +12,13 @@
     "bootstrap": "^5.2.3",
     "distance-matrix-api": "^1.0.0",
     "google-map-react": "^2.2.0",
+    "i18next": "^22.4.9",
+    "i18next-browser-languagedetector": "^7.0.1",
     "mdb-react-ui-kit": "^5.1.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^12.1.4",
     "react-router-dom": "^6.6.2",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"

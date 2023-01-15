@@ -1,9 +1,0 @@
-.bubble-text {
-    position: absolute;
-    font-size: 32px;
-}
-
-.bubble-text:hover {
-    color: blue;
-    font-weight: bold;
-}
