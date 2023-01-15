@@ -2,6 +2,7 @@
   "name": "rbc",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/round-table",
   "dependencies": {
     "@googlemaps/react-wrapper": "^1.1.35",
     "@react-google-maps/api": "^2.17.1",
