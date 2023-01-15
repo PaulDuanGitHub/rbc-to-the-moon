@@ -15,7 +15,7 @@ class EnglishPage extends Component {
             <div>
                 
                 {/* <Button size='lg' variant="Open a bank account">Open a bank account</Button>{' '} */}
-                <NavLink to="/ba"><MDBBtn size="lg" color="light" className="square-responsive" variant="Open a bank account" onClick={this.test}>Open a <br /> bank account</MDBBtn></NavLink>{'l '}
+                <NavLink to="/ba"><MDBBtn size="lg" color="light" className="square-responsive" variant="Open a bank account" onClick={this.test}>Open a <br /> bank account</MDBBtn></NavLink>{'1 '}
 
 
                 {/* <Button size='lg' variant="Open a bank account">Open a bank account</Button>{' '} */}
@@ -23,7 +23,7 @@ class EnglishPage extends Component {
                 <br />
 
                 {/* <Button size='lg' variant="Open a bank account">Open a bank account</Button>{' '} */}
-                <NavLink to="/le"><MDBBtn size="lg" color="light" className="square-responsive" variant="How to send/recieve money from home" onClick={this.test}>How to send/recieve money from home</MDBBtn></NavLink>{'l '}
+                <NavLink to="/re"><MDBBtn size="lg" color="light" className="square-responsive" variant="How to send/recieve money from home" onClick={this.test}>How to send/recieve money from home</MDBBtn></NavLink>{'l '}
 
                 {/* <Button size='lg' variant="Open a bank account">Open a bank account</Button>{' '} */}
                 <NavLink to="/fi"><MDBBtn size="lg" color="light" className="square-responsive" variant="Find a bank institution near me" onClick={this.test}>Find a bank institution near me</MDBBtn></NavLink>{'l '}
@@ -33,9 +33,8 @@ class EnglishPage extends Component {
                 In Canada, RBC banking is second to none. For us, it is most important that you feel comfortable with banking and understand how Canadian banking words <br />
             </h4>
                 
+            { <h1><NavLink to = "/lang"><Button size='lg' variant="Back" onClick={this.test}>Back</Button></NavLink></h1> }
             </div>
-            
-
 
     
             <QRComponment></QRComponment>
